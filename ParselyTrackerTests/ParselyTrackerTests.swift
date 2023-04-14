@@ -67,7 +67,10 @@ class ParselyTrackerTests: ParselyTestCase {
     }
     func testTrackPause() {
         parselyTestTracker.trackPlay(url: testUrl, videoID: testVideoId, duration: TimeInterval(10))
-        expectParselyState(self.parselyTestTracker.track.videoManager.trackedVideos.isEmpty).toEventually(beFalse())
+        parselyTestTracker.expect({ $0.track.videoManager.trackedVideos }).toEventuallyNot(beEmpty())
+        // Previous version, for reference
+        //
+        // expectParselyState(self.parselyTestTracker.track.videoManager.trackedVideos).toEventuallyNot(beEmpty())
 
         parselyTestTracker.trackPause()
         expectParselyState(self.parselyTestTracker.track.videoManager.trackedVideos.values.first?.isPlaying).toEventually(beFalse())
@@ -98,6 +101,22 @@ class ParselyTrackerTests: ParselyTestCase {
             // of Nimble's `expect(...).toEventually(..)` DSL.
             self.parselyTestTracker.eventProcessor.sync {
                 value = expression()
+            }
+            return value
+        }
+    }
+}
+
+extension Parsely {
+
+    /// A helper method to safely set test expectations on the tracker's internal state.
+    func expect<T>(file: FileString = #file, line: UInt = #line, _ expression: @escaping (Parsely) -> T?) -> SyncExpectation<T> {
+        Nimble.expect(file: file, line: line) {
+            var value: T? = nil
+            // Calling `DispatchQueue.sync` here is not ideal, but this is a convenient way to take advantange
+            // of Nimble's `expect(...).toEventually(..)` DSL.
+            self.eventProcessor.sync {
+                value = expression(self)
             }
             return value
         }
