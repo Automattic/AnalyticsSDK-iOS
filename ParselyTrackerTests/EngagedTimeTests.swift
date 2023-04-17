@@ -1,12 +1,6 @@
 import XCTest
 import os.log
-// FIXME: The Swift package name is different from the name of the framework.
-//
-// This import works when we open the Xcode project, but fails if we open the Package.
-// On fix would be to rename the framework target to ParselyAnalytics, too, then we can use:
-//
-// @testable import ParselyAnalytics
-@testable import ParselyTracker
+@testable import ParselyAnalytics
 
 class EngagedTimeTests: ParselyTestCase {
     var engagedTime: EngagedTime?
