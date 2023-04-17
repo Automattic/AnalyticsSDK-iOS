@@ -14,6 +14,7 @@ public class Parsely {
             return nil
         }
     }
+    // FIXME: Is it appropriate to have `sharedInstance` and `getInstance` (below) both instantiating a new `Parsely`?
     public static let sharedInstance = Parsely()
 
     var config: [String: Any] = [:]
