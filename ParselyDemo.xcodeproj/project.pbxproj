@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2A1F02DDE91E502E3B49AFAB /* StorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1F03819E4FAF1F979D5926 /* StorageTests.swift */; };
-		3F6BE52A29ED1A4500C52091 /* ParselyAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3F6BE52929ED1A4500C52091 /* ParselyAnalytics */; };
-		3F6BE52C29ED1A6500C52091 /* ParselyAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3F6BE52B29ED1A6500C52091 /* ParselyAnalytics */; };
+		3F6BE53329ED6AB800C52091 /* ParselyAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3F6BE53229ED6AB800C52091 /* ParselyAnalytics */; };
+		3F6BE53529ED6ABC00C52091 /* ParselyAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3F6BE53429ED6ABC00C52091 /* ParselyAnalytics */; };
 		3FCAFC8A29E96E8E00BC9360 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 3FCAFC8929E96E8E00BC9360 /* Nimble */; };
 		AA73AAAF2242C1F10089BF1D /* ParselyTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA73AAAE2242C1F10089BF1D /* ParselyTestCase.swift */; };
 		AA7473DE224956A000C75436 /* ParselyAnalytics.podspec in Resources */ = {isa = PBXBuildFile; fileRef = AA7473DD224956A000C75436 /* ParselyAnalytics.podspec */; };
@@ -58,8 +58,7 @@
 
 /* Begin PBXFileReference section */
 		2A1F03819E4FAF1F979D5926 /* StorageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageTests.swift; sourceTree = "<group>"; };
-		3F6BE52E29ED1C8500C52091 /* AnalyticsSDK-iOS */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "AnalyticsSDK-iOS"; sourceTree = "<group>"; };
-		3F6BE53029ED20B000C52091 /* AnalyticsSDK-iOS */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "AnalyticsSDK-iOS"; sourceTree = "<group>"; };
+		3F6BE53129ED6A8500C52091 /* AnalyticsSDK-iOS */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "AnalyticsSDK-iOS"; sourceTree = "<group>"; };
 		AA73AAAE2242C1F10089BF1D /* ParselyTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParselyTestCase.swift; sourceTree = "<group>"; };
 		AA7473DD224956A000C75436 /* ParselyAnalytics.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ParselyAnalytics.podspec; sourceTree = "<group>"; };
 		AAEDC32822123DD300769350 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -94,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F6BE52A29ED1A4500C52091 /* ParselyAnalytics in Frameworks */,
+				3F6BE53329ED6AB800C52091 /* ParselyAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F6BE52C29ED1A6500C52091 /* ParselyAnalytics in Frameworks */,
+				3F6BE53529ED6ABC00C52091 /* ParselyAnalytics in Frameworks */,
 				3FCAFC8A29E96E8E00BC9360 /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,8 +112,7 @@
 		3F6BE52D29ED1C8500C52091 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				3F6BE52E29ED1C8500C52091 /* AnalyticsSDK-iOS */,
-				3F6BE53029ED20B000C52091 /* AnalyticsSDK-iOS */,
+				3F6BE53129ED6A8500C52091 /* AnalyticsSDK-iOS */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -204,7 +202,7 @@
 			);
 			name = ParselyDemo;
 			packageProductDependencies = (
-				3F6BE52929ED1A4500C52091 /* ParselyAnalytics */,
+				3F6BE53229ED6AB800C52091 /* ParselyAnalytics */,
 			);
 			productName = AnalyticsSDK;
 			productReference = F40D9A5A20EFF74F0030525E /* ParselyDemo.app */;
@@ -226,7 +224,7 @@
 			name = ParselyTrackerTests;
 			packageProductDependencies = (
 				3FCAFC8929E96E8E00BC9360 /* Nimble */,
-				3F6BE52B29ED1A6500C52091 /* ParselyAnalytics */,
+				3F6BE53429ED6ABC00C52091 /* ParselyAnalytics */,
 			);
 			productName = ParselyTrackerTests;
 			productReference = F433339620F0087E004BB6F5 /* ParselyTrackerTests.xctest */;
@@ -605,11 +603,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3F6BE52929ED1A4500C52091 /* ParselyAnalytics */ = {
+		3F6BE53229ED6AB800C52091 /* ParselyAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ParselyAnalytics;
 		};
-		3F6BE52B29ED1A6500C52091 /* ParselyAnalytics */ = {
+		3F6BE53429ED6ABC00C52091 /* ParselyAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ParselyAnalytics;
 		};
