@@ -40,4 +40,10 @@ jobs:
       run: pod install
     - name: Build and Test
       run: |
-        xcodebuild test -project ParselyDemo.xcodeproj -scheme ParselyTrackerTests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=${{ matrix.iphone }},OS=${{ matrix.ios }}' | xcpretty && exit ${PIPESTATUS[0]}
+        xcodebuild test \
+          -project ParselyDemo.xcodeproj \
+          -scheme ParselyDemo \
+          -sdk iphonesimulator \
+          -destination 'platform=iOS Simulator,name=${{ matrix.iphone }},OS=${{ matrix.ios }}' \
+          | xcpretty \
+          && exit ${PIPESTATUS[0]}
