@@ -79,11 +79,7 @@ class EngagedTimeTests: ParselyTestCase {
         }
         waitForExpectations(timeout: assertionTimeout + acceptableDifference, handler: nil)
         // put application in background
-        if #available(iOS 13.0, *) {
-            NotificationCenter.default.post(name: UIScene.didEnterBackgroundNotification, object: nil)
-        } else{
-            NotificationCenter.default.post(name: UIApplication.didEnterBackgroundNotification, object: nil)
-        }
+        NotificationCenter.default.post(name: UIScene.didEnterBackgroundNotification, object: nil)
         let accumulatedTime:TimeInterval = sharedInstance!.track.engagedTime.accumulators[testUrl]!.accumulatedTime
         XCTAssert(accumulatedTime <= 3, "Engaged time should be less than or equal to 3 seconds but it was \(accumulatedTime)")
 
