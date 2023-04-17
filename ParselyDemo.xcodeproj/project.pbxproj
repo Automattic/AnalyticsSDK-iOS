@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2A1F02DDE91E502E3B49AFAB /* StorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1F03819E4FAF1F979D5926 /* StorageTests.swift */; };
-		2A1F02E3BE1F9F969BD9C6E1 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1F0F92460A849C17B26338 /* Storage.swift */; };
-		2A1F05EB11D3A1B7EC5FB2C1 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1F0F92460A849C17B26338 /* Storage.swift */; };
 		3F6BE52A29ED1A4500C52091 /* ParselyAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3F6BE52929ED1A4500C52091 /* ParselyAnalytics */; };
 		3F6BE52C29ED1A6500C52091 /* ParselyAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3F6BE52B29ED1A6500C52091 /* ParselyAnalytics */; };
 		3FCAFC8A29E96E8E00BC9360 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 3FCAFC8929E96E8E00BC9360 /* Nimble */; };
@@ -60,18 +58,13 @@
 
 /* Begin PBXFileReference section */
 		2A1F03819E4FAF1F979D5926 /* StorageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageTests.swift; sourceTree = "<group>"; };
-		2A1F0F92460A849C17B26338 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
-		3F6BE52829ED19F500C52091 /* AnalyticsSDK-iOS */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "AnalyticsSDK-iOS"; sourceTree = "<group>"; };
+		3F6BE52E29ED1C8500C52091 /* AnalyticsSDK-iOS */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "AnalyticsSDK-iOS"; sourceTree = "<group>"; };
 		AA73AAAE2242C1F10089BF1D /* ParselyTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParselyTestCase.swift; sourceTree = "<group>"; };
 		AA7473DD224956A000C75436 /* ParselyAnalytics.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ParselyAnalytics.podspec; sourceTree = "<group>"; };
-		AAEDC3262212161F00769350 /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 		AAEDC32822123DD300769350 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AAEDC32A2212407700769350 /* ParselyTracker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParselyTracker.framework; path = ../../../Downloads/ParselyTracker.framework; sourceTree = "<group>"; };
-		B205889C220CB67500476E27 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
 		B205889E220CB72A00476E27 /* RequestBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilderTests.swift; sourceTree = "<group>"; };
-		B2BC46FA2208D60A000B937A /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		B2C84B65220A03610018BC7B /* SamplerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplerTests.swift; sourceTree = "<group>"; };
-		B2FC40BD221CC42300C70806 /* Metadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
 		B2FC40BF221CC43200C70806 /* MetadataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataTests.swift; sourceTree = "<group>"; };
 		F40D9A5A20EFF74F0030525E /* ParselyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParselyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F40D9A5D20EFF74F0030525E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,20 +75,10 @@
 		F40D9A6920EFF74F0030525E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F40D9A6B20EFF7500030525E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F40D9A7F20EFF7D70030525E /* AnalyticsSDK.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AnalyticsSDK.entitlements; sourceTree = "<group>"; };
-		F40D9A8020EFFADD0030525E /* ParselyTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParselyTracker.swift; sourceTree = "<group>"; };
 		F410D63021061D7800DB3EBE /* PixelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelTests.swift; sourceTree = "<group>"; };
-		F433339120F0087E004BB6F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F433339620F0087E004BB6F5 /* ParselyTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParselyTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F433339D20F0087E004BB6F5 /* ParselyTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParselyTrackerTests.swift; sourceTree = "<group>"; };
 		F433339F20F0087E004BB6F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F43333AD20F008EE004BB6F5 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
-		F43333AE20F008EE004BB6F5 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
-		F43333B020F008EE004BB6F5 /* Sampler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sampler.swift; sourceTree = "<group>"; };
-		F43333B120F008EE004BB6F5 /* EventQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventQueue.swift; sourceTree = "<group>"; };
-		F43333B220F008EF004BB6F5 /* EngagedTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngagedTime.swift; sourceTree = "<group>"; };
-		F43333B320F008EF004BB6F5 /* Pixel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pixel.swift; sourceTree = "<group>"; };
-		F43333B420F008EF004BB6F5 /* Visitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visitor.swift; sourceTree = "<group>"; };
-		F43333B520F008EF004BB6F5 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		F441A55B20F3B8BF009B556E /* EventQueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventQueueTests.swift; sourceTree = "<group>"; };
 		F441A55D20F53A56009B556E /* EventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTests.swift; sourceTree = "<group>"; };
 		F4BF86672190DAFC00BD3867 /* EngagedTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngagedTimeTests.swift; sourceTree = "<group>"; };
@@ -126,10 +109,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3F6BE52729ED19F500C52091 /* Packages */ = {
+		3F6BE52D29ED1C8500C52091 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				3F6BE52829ED19F500C52091 /* AnalyticsSDK-iOS */,
+				3F6BE52E29ED1C8500C52091 /* AnalyticsSDK-iOS */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -145,11 +128,10 @@
 		F40D9A5120EFF74F0030525E = {
 			isa = PBXGroup;
 			children = (
-				3F6BE52729ED19F500C52091 /* Packages */,
+				3F6BE52D29ED1C8500C52091 /* Packages */,
 				AA7473DD224956A000C75436 /* ParselyAnalytics.podspec */,
 				AAEDC32822123DD300769350 /* README.md */,
 				F40D9A5C20EFF74F0030525E /* ParselyDemo */,
-				F433338F20F0087E004BB6F5 /* ParselyTracker */,
 				F433339C20F0087E004BB6F5 /* ParselyTrackerTests */,
 				F40D9A5B20EFF74F0030525E /* Products */,
 				E6EFA5F61B38FE34B3DF5AD2 /* Frameworks */,
@@ -178,28 +160,6 @@
 				F40D9A6B20EFF7500030525E /* Info.plist */,
 			);
 			path = ParselyDemo;
-			sourceTree = "<group>";
-		};
-		F433338F20F0087E004BB6F5 /* ParselyTracker */ = {
-			isa = PBXGroup;
-			children = (
-				AAEDC3262212161F00769350 /* HttpClient.swift */,
-				F43333B220F008EF004BB6F5 /* EngagedTime.swift */,
-				F43333B120F008EE004BB6F5 /* EventQueue.swift */,
-				F43333B520F008EF004BB6F5 /* Event.swift */,
-				F43333B320F008EF004BB6F5 /* Pixel.swift */,
-				F43333B020F008EE004BB6F5 /* Sampler.swift */,
-				F43333AD20F008EE004BB6F5 /* Session.swift */,
-				F43333AE20F008EE004BB6F5 /* Video.swift */,
-				F43333B420F008EF004BB6F5 /* Visitor.swift */,
-				F40D9A8020EFFADD0030525E /* ParselyTracker.swift */,
-				F433339120F0087E004BB6F5 /* Info.plist */,
-				2A1F0F92460A849C17B26338 /* Storage.swift */,
-				B2BC46FA2208D60A000B937A /* Track.swift */,
-				B205889C220CB67500476E27 /* RequestBuilder.swift */,
-				B2FC40BD221CC42300C70806 /* Metadata.swift */,
-			);
-			path = ParselyTracker;
 			sourceTree = "<group>";
 		};
 		F433339C20F0087E004BB6F5 /* ParselyTrackerTests */ = {
@@ -349,7 +309,6 @@
 				F40D9A6220EFF74F0030525E /* SecondViewController.swift in Sources */,
 				F40D9A5E20EFF74F0030525E /* AppDelegate.swift in Sources */,
 				F40D9A6020EFF74F0030525E /* FirstViewController.swift in Sources */,
-				2A1F05EB11D3A1B7EC5FB2C1 /* Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +325,6 @@
 				B2C84B66220A03610018BC7B /* SamplerTests.swift in Sources */,
 				F4BF86682190DAFC00BD3867 /* EngagedTimeTests.swift in Sources */,
 				F433339E20F0087E004BB6F5 /* ParselyTrackerTests.swift in Sources */,
-				2A1F02E3BE1F9F969BD9C6E1 /* Storage.swift in Sources */,
 				F4BF866C2190DB3C00BD3867 /* SessionTests.swift in Sources */,
 				2A1F02DDE91E502E3B49AFAB /* StorageTests.swift in Sources */,
 				F4BF866A2190DB1C00BD3867 /* TrackTests.swift in Sources */,

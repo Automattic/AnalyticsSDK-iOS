@@ -20,8 +20,7 @@ let package = Package(
         .target(
             name: "ParselyAnalytics",
             dependencies: [],
-            path: "ParselyTracker",
-            exclude: ["Info.plist"],
+            path: "Sources",
             resources: []
         ),
         .testTarget(
