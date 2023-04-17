@@ -58,7 +58,8 @@
 
 /* Begin PBXFileReference section */
 		2A1F03819E4FAF1F979D5926 /* StorageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageTests.swift; sourceTree = "<group>"; };
-		3F6BE52E29ED1C8500C52091 /* AnalyticsSDK-iOS */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "AnalyticsSDK-iOS"; sourceTree = "<group>"; };
+		3F6BE52E29ED1C8500C52091 /* AnalyticsSDK-iOS */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "AnalyticsSDK-iOS"; sourceTree = "<group>"; };
+		3F6BE53029ED20B000C52091 /* AnalyticsSDK-iOS */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "AnalyticsSDK-iOS"; sourceTree = "<group>"; };
 		AA73AAAE2242C1F10089BF1D /* ParselyTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParselyTestCase.swift; sourceTree = "<group>"; };
 		AA7473DD224956A000C75436 /* ParselyAnalytics.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ParselyAnalytics.podspec; sourceTree = "<group>"; };
 		AAEDC32822123DD300769350 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -113,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				3F6BE52E29ED1C8500C52091 /* AnalyticsSDK-iOS */,
+				3F6BE53029ED20B000C52091 /* AnalyticsSDK-iOS */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
